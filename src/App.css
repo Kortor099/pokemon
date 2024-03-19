@@ -1,38 +1,46 @@
-.App {
+
+.StyledAPI {
+  font-size: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.StyledPokemon {
+  font-size: 30px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Styledbutton {
+  height: 30px;
+  width: 180px;
+  margin: auto; 
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #2965f1; 
+  color: #ffffff; 
+  transition: background-color 0.3s ease;
+  display: block;
+  &:hover {border: 3px solid #a4bcf4; };
+  text-align: center;
+}
+
+.Dataframe {
+  border: 2px solid #13790c;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px; 
+  background-color: #90db57;
+  text-align: left;
+  width: 390px; 
+  @media (min-width: 576px) {
+    margin: 5px auto;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Photoframe {
+  width: 200px;
+  background-color: #ffffff;
+  text-align: left;
 }
