@@ -3,49 +3,6 @@ import axios from 'axios';
 import styled from 'styled-components';
 import './App.css';
 
-const StyledAPI = styled.div`
-  font-size: 30px;
-  text-align: center;
-`;
-const StyledPokemon = styled.div`
-  font-size: 30px;
-  text-align: center;
-`;
-
-const Styledbutton = styled.button`
-  height: 40px;
-  width: 180px;
-  margin: auto; 
-  font-size: 18px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #2965f1; 
-  color: #ffffff; 
-  transition: background-color 0.3s ease;
-  display: block;
-  &:hover {border: 3px solid #a4bcf4; };
-`;
-
-const Dataframe = styled.div`
-  border: 2px solid #13790c;
-  border-radius: 5px;
-  padding: 5px;
-  margin: 5px; 
-  background-color: #90db57;
-  text-align: left;
-  width: 390px; 
-  @media (min-width: 576px) {
-    margin: 5px auto;
-  }
-`;
-
-const Photoframe = styled.div`
-  width: 200px;
-  background-color: #ffffff;
-  text-align: left;
-`;
-
 
 function PokemonList() {
   const [pokemonList, setPokemonList] = useState([]);
